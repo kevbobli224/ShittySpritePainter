@@ -30,6 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.trackBar2 = new System.Windows.Forms.TrackBar();
+            this.trackBar3 = new System.Windows.Forms.TrackBar();
+            this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.pictureBox33 = new System.Windows.Forms.PictureBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.button10 = new System.Windows.Forms.Button();
@@ -94,15 +97,15 @@
             this.button4 = new System.Windows.Forms.Button();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.pictureBox32 = new System.Windows.Forms.PictureBox();
-            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
-            this.trackBar2 = new System.Windows.Forms.TrackBar();
-            this.trackBar3 = new System.Windows.Forms.TrackBar();
             this.panel1 = new System.Windows.Forms.PixelEditor();
+            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
@@ -136,9 +139,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -150,18 +150,31 @@
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.splitContainer1.Panel1.Controls.Add(this.textBox8);
             this.splitContainer1.Panel1.Controls.Add(this.trackBar2);
+            this.splitContainer1.Panel1.Controls.Add(this.E);
             this.splitContainer1.Panel1.Controls.Add(this.trackBar3);
+            this.splitContainer1.Panel1.Controls.Add(this.C);
             this.splitContainer1.Panel1.Controls.Add(this.trackBar1);
+            this.splitContainer1.Panel1.Controls.Add(this.D);
             this.splitContainer1.Panel1.Controls.Add(this.pictureBox33);
+            this.splitContainer1.Panel1.Controls.Add(this.B);
             this.splitContainer1.Panel1.Controls.Add(this.checkBox1);
+            this.splitContainer1.Panel1.Controls.Add(this.A);
             this.splitContainer1.Panel1.Controls.Add(this.button10);
+            this.splitContainer1.Panel1.Controls.Add(this.textBox7);
             this.splitContainer1.Panel1.Controls.Add(this.button9);
+            this.splitContainer1.Panel1.Controls.Add(this.button5);
             this.splitContainer1.Panel1.Controls.Add(this.button8);
+            this.splitContainer1.Panel1.Controls.Add(this.button12);
             this.splitContainer1.Panel1.Controls.Add(this.button7);
+            this.splitContainer1.Panel1.Controls.Add(this.button11);
             this.splitContainer1.Panel1.Controls.Add(this.button6);
+            this.splitContainer1.Panel1.Controls.Add(this.button4);
             this.splitContainer1.Panel1.Controls.Add(this.label5);
+            this.splitContainer1.Panel1.Controls.Add(this.textBox6);
             this.splitContainer1.Panel1.Controls.Add(this.label4);
+            this.splitContainer1.Panel1.Controls.Add(this.pictureBox32);
             this.splitContainer1.Panel1.Controls.Add(this.pictureBox31);
             this.splitContainer1.Panel1.Controls.Add(this.label3);
             this.splitContainer1.Panel1.Controls.Add(this.label2);
@@ -207,23 +220,46 @@
             // 
             // splitContainer1.Panel2
             // 
-            this.splitContainer1.Panel2.Controls.Add(this.textBox8);
-            this.splitContainer1.Panel2.Controls.Add(this.E);
-            this.splitContainer1.Panel2.Controls.Add(this.C);
-            this.splitContainer1.Panel2.Controls.Add(this.D);
-            this.splitContainer1.Panel2.Controls.Add(this.B);
-            this.splitContainer1.Panel2.Controls.Add(this.A);
-            this.splitContainer1.Panel2.Controls.Add(this.textBox7);
-            this.splitContainer1.Panel2.Controls.Add(this.button5);
-            this.splitContainer1.Panel2.Controls.Add(this.button12);
-            this.splitContainer1.Panel2.Controls.Add(this.button11);
-            this.splitContainer1.Panel2.Controls.Add(this.button4);
-            this.splitContainer1.Panel2.Controls.Add(this.textBox6);
-            this.splitContainer1.Panel2.Controls.Add(this.pictureBox32);
             this.splitContainer1.Panel2.Controls.Add(this.panel1);
-            this.splitContainer1.Size = new System.Drawing.Size(720, 477);
-            this.splitContainer1.SplitterDistance = 366;
+            this.splitContainer1.Size = new System.Drawing.Size(1838, 868);
+            this.splitContainer1.SplitterDistance = 360;
             this.splitContainer1.TabIndex = 0;
+            // 
+            // trackBar2
+            // 
+            this.trackBar2.BackColor = System.Drawing.Color.Green;
+            this.trackBar2.LargeChange = 1;
+            this.trackBar2.Location = new System.Drawing.Point(254, 48);
+            this.trackBar2.Maximum = 51;
+            this.trackBar2.Name = "trackBar2";
+            this.trackBar2.Orientation = System.Windows.Forms.Orientation.Vertical;
+            this.trackBar2.Size = new System.Drawing.Size(45, 665);
+            this.trackBar2.TabIndex = 12;
+            this.trackBar2.Scroll += new System.EventHandler(this.trackBar2_Scroll);
+            // 
+            // trackBar3
+            // 
+            this.trackBar3.BackColor = System.Drawing.Color.Blue;
+            this.trackBar3.LargeChange = 1;
+            this.trackBar3.Location = new System.Drawing.Point(305, 48);
+            this.trackBar3.Maximum = 51;
+            this.trackBar3.Name = "trackBar3";
+            this.trackBar3.Orientation = System.Windows.Forms.Orientation.Vertical;
+            this.trackBar3.Size = new System.Drawing.Size(45, 665);
+            this.trackBar3.TabIndex = 12;
+            this.trackBar3.Scroll += new System.EventHandler(this.trackBar3_Scroll);
+            // 
+            // trackBar1
+            // 
+            this.trackBar1.BackColor = System.Drawing.Color.Red;
+            this.trackBar1.LargeChange = 1;
+            this.trackBar1.Location = new System.Drawing.Point(203, 48);
+            this.trackBar1.Maximum = 51;
+            this.trackBar1.Name = "trackBar1";
+            this.trackBar1.Orientation = System.Windows.Forms.Orientation.Vertical;
+            this.trackBar1.Size = new System.Drawing.Size(45, 665);
+            this.trackBar1.TabIndex = 12;
+            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
             // 
             // pictureBox33
             // 
@@ -763,7 +799,7 @@
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(165, 441);
+            this.textBox8.Location = new System.Drawing.Point(158, 835);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(67, 20);
             this.textBox8.TabIndex = 6;
@@ -772,7 +808,7 @@
             // E
             // 
             this.E.AutoSize = true;
-            this.E.Location = new System.Drawing.Point(164, 420);
+            this.E.Location = new System.Drawing.Point(157, 814);
             this.E.Name = "E";
             this.E.Size = new System.Drawing.Size(68, 17);
             this.E.TabIndex = 5;
@@ -783,7 +819,7 @@
             // C
             // 
             this.C.AutoSize = true;
-            this.C.Location = new System.Drawing.Point(90, 420);
+            this.C.Location = new System.Drawing.Point(83, 814);
             this.C.Name = "C";
             this.C.Size = new System.Drawing.Size(68, 17);
             this.C.TabIndex = 5;
@@ -794,7 +830,7 @@
             // D
             // 
             this.D.AutoSize = true;
-            this.D.Location = new System.Drawing.Point(90, 441);
+            this.D.Location = new System.Drawing.Point(83, 835);
             this.D.Name = "D";
             this.D.Size = new System.Drawing.Size(69, 17);
             this.D.TabIndex = 5;
@@ -805,7 +841,7 @@
             // B
             // 
             this.B.AutoSize = true;
-            this.B.Location = new System.Drawing.Point(16, 442);
+            this.B.Location = new System.Drawing.Point(9, 836);
             this.B.Name = "B";
             this.B.Size = new System.Drawing.Size(68, 17);
             this.B.TabIndex = 5;
@@ -816,7 +852,7 @@
             // A
             // 
             this.A.AutoSize = true;
-            this.A.Location = new System.Drawing.Point(16, 419);
+            this.A.Location = new System.Drawing.Point(9, 813);
             this.A.Name = "A";
             this.A.Size = new System.Drawing.Size(68, 17);
             this.A.TabIndex = 5;
@@ -826,7 +862,7 @@
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(54, 379);
+            this.textBox7.Location = new System.Drawing.Point(47, 773);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(120, 20);
             this.textBox7.TabIndex = 4;
@@ -834,7 +870,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(180, 377);
+            this.button5.Location = new System.Drawing.Point(173, 771);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 3;
@@ -844,7 +880,7 @@
             // 
             // button12
             // 
-            this.button12.Location = new System.Drawing.Point(238, 423);
+            this.button12.Location = new System.Drawing.Point(231, 817);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(43, 38);
             this.button12.TabIndex = 3;
@@ -854,7 +890,7 @@
             // 
             // button11
             // 
-            this.button11.Location = new System.Drawing.Point(287, 423);
+            this.button11.Location = new System.Drawing.Point(280, 817);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(49, 38);
             this.button11.TabIndex = 3;
@@ -864,7 +900,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(261, 377);
+            this.button4.Location = new System.Drawing.Point(254, 771);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 3;
@@ -874,7 +910,7 @@
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(54, 351);
+            this.textBox6.Location = new System.Drawing.Point(47, 745);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(282, 20);
             this.textBox6.TabIndex = 2;
@@ -883,51 +919,11 @@
             // pictureBox32
             // 
             this.pictureBox32.BackColor = System.Drawing.Color.White;
-            this.pictureBox32.Location = new System.Drawing.Point(16, 351);
+            this.pictureBox32.Location = new System.Drawing.Point(9, 745);
             this.pictureBox32.Name = "pictureBox32";
             this.pictureBox32.Size = new System.Drawing.Size(32, 32);
             this.pictureBox32.TabIndex = 1;
             this.pictureBox32.TabStop = false;
-            // 
-            // folderBrowserDialog1
-            // 
-            this.folderBrowserDialog1.RootFolder = System.Environment.SpecialFolder.UserProfile;
-            // 
-            // trackBar1
-            // 
-            this.trackBar1.BackColor = System.Drawing.Color.Red;
-            this.trackBar1.LargeChange = 1;
-            this.trackBar1.Location = new System.Drawing.Point(203, 48);
-            this.trackBar1.Maximum = 51;
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Orientation = System.Windows.Forms.Orientation.Vertical;
-            this.trackBar1.Size = new System.Drawing.Size(45, 397);
-            this.trackBar1.TabIndex = 12;
-            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
-            // 
-            // trackBar2
-            // 
-            this.trackBar2.BackColor = System.Drawing.Color.Green;
-            this.trackBar2.LargeChange = 1;
-            this.trackBar2.Location = new System.Drawing.Point(254, 48);
-            this.trackBar2.Maximum = 51;
-            this.trackBar2.Name = "trackBar2";
-            this.trackBar2.Orientation = System.Windows.Forms.Orientation.Vertical;
-            this.trackBar2.Size = new System.Drawing.Size(45, 397);
-            this.trackBar2.TabIndex = 12;
-            this.trackBar2.Scroll += new System.EventHandler(this.trackBar2_Scroll);
-            // 
-            // trackBar3
-            // 
-            this.trackBar3.BackColor = System.Drawing.Color.Blue;
-            this.trackBar3.LargeChange = 1;
-            this.trackBar3.Location = new System.Drawing.Point(305, 48);
-            this.trackBar3.Maximum = 51;
-            this.trackBar3.Name = "trackBar3";
-            this.trackBar3.Orientation = System.Windows.Forms.Orientation.Vertical;
-            this.trackBar3.Size = new System.Drawing.Size(45, 397);
-            this.trackBar3.TabIndex = 12;
-            this.trackBar3.Scroll += new System.EventHandler(this.trackBar3_Scroll);
             // 
             // panel1
             // 
@@ -938,15 +934,20 @@
             this.panel1.Location = new System.Drawing.Point(16, 25);
             this.panel1.Name = "panel1";
             this.panel1.PixelSize = 8;
-            this.panel1.Size = new System.Drawing.Size(320, 320);
+            this.panel1.Size = new System.Drawing.Size(1446, 831);
             this.panel1.TabIndex = 0;
             this.panel1.targetDisplay = null;
+            // 
+            // folderBrowserDialog1
+            // 
+            this.folderBrowserDialog1.RootFolder = System.Environment.SpecialFolder.UserProfile;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(720, 477);
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ClientSize = new System.Drawing.Size(1838, 868);
             this.Controls.Add(this.splitContainer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -957,9 +958,11 @@
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);
-            this.splitContainer1.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
@@ -993,9 +996,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).EndInit();
             this.ResumeLayout(false);
 
         }

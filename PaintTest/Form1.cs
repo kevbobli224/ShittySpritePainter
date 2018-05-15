@@ -452,41 +452,46 @@ namespace PaintTest
             {
                 var paletteID = palette.Substring(offsetName.Length+filepathName.Length, 1);
                 Console.WriteLine(paletteID);
-                switch(paletteID)
+                foreach(var i in paletteID)
                 {
-                    case "A":
+                    if(paletteID == "A")
+                    {
                         paletteA = new List<Color>();
-                        readFileToPalette(offsetName+"A");
-                        break;
-                    case "B":
+                        readFileToPalette(offsetName + "A");
+                    }
+                    if(paletteID == "B")
+                    {
                         paletteB = new List<Color>();
                         readFileToPalette(offsetName + "B");
-                        break;
-                    case "C":
+                    }
+                    if (paletteID == "C")
+                    {
                         paletteC = new List<Color>();
                         readFileToPalette(offsetName + "C");
-                        break;
-                    case "D":
-                        paletteA = new List<Color>();
+                    }
+                    if (paletteID == "D")
+                    {
+                        paletteD = new List<Color>();
                         readFileToPalette(offsetName + "D");
-                        break;
-                    case "E":
-                        paletteA = new List<Color>();
+                    }
+                    if (paletteID == "E")
+                    {
+                        paletteE = new List<Color>();
                         readFileToPalette(offsetName + "E");
-                        break;
-
+                    }
                 }
             }
         }
-        private void readFileToPalette(string filename)
+        public void readFileToPalette(string filename)
         {
             String filepathName = textBox6.Text+ @"\";
             filepathName += filename + ".txt";
+            string fileEnd = filename.Substring(filename.Count() - 1, 1);
             try
             {
                 using (StreamReader reader = new StreamReader(filepathName))
                 {
-                    Console.WriteLine(reader);
+                    //Console.WriteLine(filename.Substring(filename.Count()-1, 1));
                     foreach (var pBox in splitContainer1.Panel1.Controls.OfType<PictureBox>())
                     {
                         if (pBox.Tag != null)
@@ -494,7 +499,16 @@ namespace PaintTest
                             if (pBox.Tag.ToString() == "palette")
                             {
                                 pBox.BackColor = cStringToColor(reader.ReadLine());
-                                paletteA.Add(pBox.BackColor);
+                                if(fileEnd == "A")
+                                    paletteA.Add(pBox.BackColor);
+                                if (fileEnd == "B")
+                                    paletteB.Add(pBox.BackColor);
+                                if (fileEnd == "C")
+                                    paletteC.Add(pBox.BackColor);
+                                if (fileEnd == "D")
+                                    paletteD.Add(pBox.BackColor);
+                                if (fileEnd == "E")
+                                    paletteE.Add(pBox.BackColor);
                             }
                         }
                     }
@@ -527,7 +541,7 @@ namespace PaintTest
 
             List<List<Color>> colorList = new List<List<Color>>();
 
-            foreach (var radio in splitContainer1.Panel2.Controls.OfType<RadioButton>())
+            foreach (var radio in splitContainer1.Panel1.Controls.OfType<RadioButton>())
             {
                 if(radio.Checked == true)
                 {
@@ -656,7 +670,7 @@ namespace PaintTest
         private void loadAllColors(List<Color> colors)
         {
             int index = 0;
-            if (colors != null)
+            if (colors != null && colors.Count != 0)
             {
                 foreach (var pBox in splitContainer1.Panel1.Controls.OfType<PictureBox>())
                 {
